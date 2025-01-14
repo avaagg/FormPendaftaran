@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javas.css">
+    <title>Formulir</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="uname">Nama Lengkap</label>
+            <br />
+            <input type="text" id="uname" name="uname" placeholder="Masukkan Nama Lengkap" required/>
+        </div>
+
+        <div>
+            <label for="email">Alamat</label>
+            <br />
+            <input type="email" id="email" name="email" placeholder="Masukkan Alamat" required />
+        </div>
+
+        <div>
+            <label for="birthplace">Tempat Lahir</label>
+            <br />
+            <input type="text" id="birthplace" name="birthplace" placeholder="Masukkan Tempat Lahir" required />
+        </div>
+
+        <div>
+            <label for="birthdate">Tanggal Lahir</label>
+            <br />
+            <input type="date" id="birthdate" name="birthdate" required />
+        </div>
+
+        <div>
+            <label>Jenis Kelamin</label>
+            <br />
+            <input type="radio" id="male" name="gender" value="laki-laki" required />
+            <label for="male">Laki-Laki</label>
+            <br />
+            <input type="radio" id="female" name="gender" value="perempuan" required />
+            <label for="female">Perempuan</label>
+        </div>
+
+        <div>
+            <label>Hobi</label>
+            <br />
+            <input type="checkbox" id="hobby-running" name="hobby" value="lari" />
+            <label for="hobby-running">Lari</label>
+            <br />
+            <input type="checkbox" id="hobby-badminton" name="hobby" value="badminton" />
+            <label for="hobby-badminton">Badminton</label>
+            <br />
+            <input type="checkbox" id="hobby-swimming" name="hobby" value="renang" />
+            <label for="hobby-swimming">Renang</label>
+        </div>
+
+        <div>
+            <label for="class">Kelas</label>
+            <br />
+            <select id="class" name="class" required>
+                <option value="" disabled selected>Pilih Kelas</option>
+                <option value="kelas-a">X PPLG 1</option>
+                <option value="kelas-b">X PPLG 2</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
